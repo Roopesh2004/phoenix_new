@@ -94,16 +94,7 @@ function speakThis(message) {
         const finalText = "Opening Calculator";
         speech.text = finalText;
 
-    } else if (message.includes('my mode')) {
-        window.open("https://leetcode.com/problemset/", "_blank");
-        window.open("https://www.youtube.com/", "_blank");
-        window.open("https://chat.openai.com/", "_blank");
-        window.open("https://web.whatsapp.com/", "_blank");
-
-        const finalText = "Opening my mode";
-        speech.text = finalText;
-
-    } else {
+    }  else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on google";
         speech.text = finalText;
